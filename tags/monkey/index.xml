@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>monkey on 仲夏叶 | 科技</title><link>https://zxye.tk/tags/monkey/</link><description>Recent content in monkey on 仲夏叶 | 科技</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 Dec 2019 16:11:14 +0000</lastBuildDate><atom:link href="https://zxye.tk/tags/monkey/index.xml" rel="self" type="application/rss+xml"/><item><title>Android随机测试工具Monkey简介</title><link>https://zxye.tk/posts/android-adb-shell-monkey-abc/</link><pubDate>Mon, 23 Dec 2019 16:11:14 +0000</pubDate><guid>https://zxye.tk/posts/android-adb-shell-monkey-abc/</guid><description>Monkey 是一个在模拟器或设备上运行的程序，可生成伪随机用户事件（例如点击、轻触或手势）流以及很多系统级事件。您可以使用 Monkey 以随机且可重复的方式对正在开发的应用进行压力测试。
+概览 # Monkey 是一个命令行工具，可以在任何模拟器实例或设备上运行。它会将伪随机用户事件流发送到系统中，从而在您正在开发的应用软件上进行压力测试。
+Monkey 包含许多选项，主要分为以下四个类别：
+基本配置选项，例如设置要尝试的事件数。 操作限制条件，例如将测试对象限制为单个软件包。 事件类型和频率。 调试选项。 Monkey 在运行时会生成事件并将其发送到系统。它还会监视被测系统并查找三种特殊情况：
+如果您已将 Monkey 限制为在一个或多个特定软件包中运行，它会监视转到任何其他软件包的尝试并阻止它们。 如果应用崩溃或收到任何未处理的异常，Monkey 会停止并报告错误。 如果应用生成“应用无响应”错误，Monkey 会停止并报告错误。 根据您选择的详细程度级别，您还将看到有关 Monkey 进度和所生成事件的报告。
+Monkey 的基本用法 # 您可以使用开发计算机上的命令行启动 Monkey，也可以通过脚本启动。由于 Monkey 在模拟器/设备环境中运行，因此您必须从该环境中通过 shell 启动它。为此，您可以在每个命令前面加上 adb shell，或者直接进入 shell 并输入 Monkey 命令。
+基本语法如下：
+$ adb shell monkey [options] &amp;lt;event-count&amp;gt; 如果未指定任何选项，Monkey 将以静默（非详细）模式启动，并将事件发送到目标上安装的任何（及所有）软件包。下面是一个更典型的命令行，它会启动您的应用并向其发送 500 个伪随机事件：
+$ adb shell monkey -p your.package.name -v 500 命令选项参考 # 下表列出了您可以在 Monkey 命令行中添加的所有选项。</description></item></channel></rss>

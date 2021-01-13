@@ -1,0 +1,29 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.80.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="k8s"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://zxye.tk/tags/k8s/"><meta property="og:updated_time" content="2019-08-02T20:33:54+00:00"><title>k8s | 仲夏叶 | 科技</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY="><script defer src=/en.search.min.3fad425eb896bf605587c421cf613958456e6b1975e759c6731356bfe51de792.js integrity="sha256-P61CXriWv2BVh8Qhz2E5WEVuaxl151nGcxNWv+Ud55I="></script><link rel=alternate type=application/rss+xml href=https://zxye.tk/tags/k8s/index.xml title="仲夏叶 | 科技"></head><body><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>仲夏叶 | 科技</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>k8s</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul><li class="flex justify-between"><a href=/categories/testing/>testing</a>
+<span>7</span></li></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/book/>book</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/testing/>testing</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/android/>android</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/monkey/>monkey</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/autotest/>autotest</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/specification/>specification</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/centos/>centos</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/k8s/>k8s</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/kubernetes/>kubernetes</a>
+<span>1</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/posts/kubernetes-cluster-using-centos/>CentOS 安装 Kubernetes 集群</a></h2><h5>August 2, 2019</h5><div><a href=/tags/kubernetes/>kubernetes</a>,
+<a href=/tags/centos/>centos</a>,
+<a href=/tags/k8s/>k8s</a></div><p>准备工作 # 一台或多台运行着下列系统的机器: CentOS 7 RHEL 7 每台机器 2 GB 或更多的 RAM (如果少于这个数字将会影响您应用的运行内存) 2 CPU 核心或更多 集群中的所有机器的网络彼此均能相互连接(公网和内网都可以) 节点之中不可以有重复的主机名，MAC 地址，product_uuid。更多详细信息请参见这里 。 开启主机上的一些特定端口. 更多详细信息请参见这里。 禁用 Swap 交换分区。为了保证 kubelet 正确运行，您 必须 禁用交换分区。 确保每个节点上 MAC 地址和 product_uuid 的唯一性。 # 您可以使用下列命令获取网络接口的 MAC 地址：ip link 或是 ifconfig -a 下列命令可以用来获取 product_uuid sudo cat /sys/class/dmi/id/product_uuid 一般来讲，硬件设备会拥有独一无二的地址，但是有些虚拟机可能会雷同。Kubernetes 使用这些值来唯一确定集群中的节点。如果这些值在集群中不唯一，可能会导致安装失败。
+检查网络适配器 # 如果您有一个以上的网络适配器，同时您的 Kubernetes 组件通过默认路由不可达，我们建议您预先添加 IP 路由规则，这样 Kubernetes 集群就可以通过对应的适配器完成连接。
+检查所需端口 # Master 节点 # 规则 方向 端口范围 作用 使用者 TCP Inbound 6443* Kubernetes API server All TCP Inbound 2379-2380 etcd server client API kube-apiserver, etcd TCP Inbound 10250 Kubelet API Self, Control plane TCP Inbound 10251 kube-scheduler Self TCP Inbound 10252 kube-controller-manager Self Worker 节点 # 规则 方向 端口范围 作用 使用者 TCP Inbound 10250 Kubelet API Self, Control plane TCP Inbound 30000-32767 NodePort Services** All ** NodePort 服务 的默认端口范围。
+<a href=/posts/kubernetes-cluster-using-centos/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav><ul><li class=book-section-flat><strong>Categories</strong><ul><li class="flex justify-between"><a href=/categories/testing/>testing</a>
+<span>7</span></li></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/book/>book</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/testing/>testing</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/android/>android</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/monkey/>monkey</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/autotest/>autotest</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/specification/>specification</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/centos/>centos</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/k8s/>k8s</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/kubernetes/>kubernetes</a>
+<span>1</span></li></ul></li></ul></nav></aside></main></body></html>
