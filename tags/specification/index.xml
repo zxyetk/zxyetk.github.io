@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>specification on 仲夏叶 | 科技</title><link>https://zxye.tk/tags/specification/</link><description>Recent content in specification on 仲夏叶 | 科技</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 03 Dec 2019 22:40:33 +0000</lastBuildDate><atom:link href="https://zxye.tk/tags/specification/index.xml" rel="self" type="application/rss+xml"/><item><title>计算机软件测试规范</title><link>https://zxye.tk/posts/specification-of-computer-software-testing/</link><pubDate>Tue, 03 Dec 2019 22:40:33 +0000</pubDate><guid>https://zxye.tk/posts/specification-of-computer-software-testing/</guid><description>标准号：GB/T 15532-2008 计算机软件测试规范
-关联标准
-GB/T 8566 信息技术 软件生存周期过程
-GB/T 9386 计算机软件测试文档编制规范
-GB/T 11457 信息技术 软件工程术语
-GB/T 16260.1 软件工程 产品质量 第一部分：质量模型
-GB/T 18492 信息技术 系统及软件完整性级别
-GB/T 20158 信息技术 软件生存周期过程 配置管理
-测试目的 # 计算机软件的测试目的是：
-验证软件是否满足软件开发合同或项目开发计划、系统/子系统设计文档、软件需求规格说明、软件设计说明和软件产品说明等规定的软件质量要求； 通过测试，发现软件缺陷； 为软件产品的质量测量和评价提供依据。 测试类别 # 根据 GB/T 8566 的要求，本标准对如下测试类别做详细描述：
-单元测试； 集成测试； 配置项测试（也称软件合格性测试或确认测试）； 系统测试； 验收测试。 可根据软件的模型、类型、完整性级别选择执行测试类型。
-回归测试可出现在上述每个测试类别中，并贯穿于整个软件生存周期，故单独分类进行描述。
-测试过程 # 概述 # 软件测试过程一般包括四项活动，按顺序分别是：测试侧或、测试设计、测试执行、测试总结。
-测试策划 # 测试策划主要是进行测试需求分析。即确定需要测试的内容或质量特性；确定测试的充分性要求；踢出测试的基本方法；确定测试的资源和技术需求；进行风险分析与评估；制定测试计划（含资源计划和进度计划）。有关测试计划的内容和要求见 GB/T 9386 。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>specification on 仲夏叶 | 科技</title><link>https://www.zxye.tk/tags/specification/</link><description>Recent content in specification on 仲夏叶 | 科技</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 03 Dec 2019 22:40:33 +0000</lastBuildDate><atom:link href="https://www.zxye.tk/tags/specification/index.xml" rel="self" type="application/rss+xml"/><item><title>计算机软件测试规范</title><link>https://www.zxye.tk/posts/specification-of-computer-software-testing/</link><pubDate>Tue, 03 Dec 2019 22:40:33 +0000</pubDate><guid>https://www.zxye.tk/posts/specification-of-computer-software-testing/</guid><description>&lt;p>标准号：GB/T 15532-2008 计算机软件测试规范&lt;/p></description></item></channel></rss>
