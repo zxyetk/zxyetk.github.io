@@ -22,7 +22,7 @@ menu:
 - 开启主机上的一些特定端口. 更多详细信息请参见[这里](https://kubernetes.io/zh/docs/setup/independent/install-kubeadm/#check-required-ports)。
 - 禁用 Swap 交换分区。为了保证 kubelet 正确运行，您 **必须** 禁用交换分区。
 
-<!-- more -->
+<!--more-->
 
 ### 确保每个节点上 MAC 地址和 product_uuid 的唯一性。
 

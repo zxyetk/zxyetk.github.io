@@ -13,7 +13,7 @@ menu:
 
 Monkey 是一个在[模拟器](https://developer.android.com/tools/help/emulator.html)或设备上运行的程序，可生成伪随机用户事件（例如点击、轻触或手势）流以及很多系统级事件。您可以使用 Monkey 以随机且可重复的方式对正在开发的应用进行压力测试。
 
-<!-- more -->
+<!--more-->
 
 # 概览
 
@@ -52,7 +52,7 @@ $ adb shell monkey [options] <event-count>
 $ adb shell monkey -p your.package.name -v 500
 ```
 
-<!-- more -->
+<!--more-->
 
 
 ## 命令选项参考

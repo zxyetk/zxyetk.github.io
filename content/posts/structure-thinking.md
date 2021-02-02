@@ -18,7 +18,7 @@ prev: /posts/structure-thinking-methods
 
 > 在日常工作中，我们时常会碰到这样的情况，有的人讲事情逻辑非常混乱，罗列了很多事项，却把握不到重点，无法把一件事情说清楚。这种思维混乱是典型的缺少结构化思维的表现。结构化思维非常重要，不仅仅体现在表达上，也体现在在我们分析问题的过程中。具备结构化思维，才能将问题分析地更全面、更深刻。
 
-<!-- more -->
+<!--more-->
 
 ## 什么是结构化思维?
 
@@ -44,13 +44,13 @@ prev: /posts/structure-thinking-methods
 
 套路是指我们解决问题的方法论，这个也非常重要。比如，5W2H 分析法就是一个非常好的，可以帮助我们分析问题的一个”套路”。试想一下，面对任何一个问题，你都能从 Why、Who、When、Where、What、How 和 How much(如下图所示)，七个方面去思考。是不是比不知道这个方法论的人，用点状的思考，5W2H 分析法就全面得多。
 
-![toutiao.com](./structure-thinking/image-20200104213012385.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213012385.png)
 
 图片来源:https://www.toutiao.com/i6619057728725729800/
 
 例如，我们在对问题域进行分析和领域知识提炼的时候，就可以用上 5W2H。 5W2H 模型给出了具有指导意义的约束，要求我们提炼的领域知识必须具备模型的六个要素。这就好比两位侃侃而谈的交谈者，因为有了确定的主题与话题边界，一场本来是漫无目的野鹤闲云似的闲聊就变成了一次深度交流的专题高端对话。
 
-![toutiao.com](./structure-thinking/image-20200104213123105.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213123105.png)
 
 逻辑是一种能力，而套路是方法论，是经验。逻辑是道的东西，而方法论是术的东西。二者都很重要，只有熟练的掌握二者我们才能更好的进行结构化思考。
 
@@ -70,7 +70,7 @@ prev: /posts/structure-thinking-methods
 
 比如面对“系统 bug 多”的问题，向上抽象是“提升代码质量”，向下抽象是 “加强测试”，都可以作为中心，选择哪个为中心取决于你当前要解决的问题是什么。
 
-![toutiao.com](./structure-thinking/image-20200104213328809.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213328809.png)
 
 ### 结构化分解
 
@@ -80,13 +80,13 @@ prev: /posts/structure-thinking-methods
 
 比如我们要对衣服进行分类，如果按照季节和风格进行分类，就会出现互相重叠，并且不能穷尽的情况，也就不满足 MECE。这种分类是逻辑混乱的。
 
-![toutiao.com](./structure-thinking/image-20200104213418119.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213418119.png)
 
 图片来源:https://www.toutiao.com/i6619057728725729800/
 
 我们可以按季节分:春秋装，冬装，夏装。除了这 3 类之外，没有其他季节了， 这个就是「不遗漏」。
 
-![toutiao.com](./structure-thinking/image-20200104213506675.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213506675.png)
 
 图片来源:https://www.toutiao.com/i6619057728725729800/
 
@@ -98,7 +98,7 @@ prev: /posts/structure-thinking-methods
 
 这里，我们就能用上结构化思维来帮我们理清思路，从而有条不紊的开展工作了。我们要知道对一个企业来说，核心要素无外乎就是业务、技术和人，也就是说这三个要素是我们要建立的中心。基于这个中心，我们可以进行进一步拆解，形成子结构。然后对子结构再进行分析找到应对策略。这样一步步递进，我们就已经在用结构化思维解决如何落地新团队的问题了。
 
-![toutiao.com](./structure-thinking/image-20200104213559594.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213559594.png)
 
 #### ★ 1. 熟悉业务
 
@@ -130,11 +130,11 @@ prev: /posts/structure-thinking-methods
 
 这个问题的中心很明确，接下来，看看我是如何使用结构化思维来解这个问题的。首先我们从空间顺序进行分解，也就是打造极客文化，我们可以去做哪些事情。
 
-![toutiao.com](./structure-thinking/image-20200104213834785.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213834785.png)
 
 空间顺序分解确定完要做的事情，我们还可以按照时间顺序对如何落地这些事情进行分解。
 
-![toutiao.com](./structure-thinking/image-20200104213907945.png)
+![toutiao.com](/posts/structure-thinking/image-20200104213907945.png)
 
 这样把按照这两个维度进行结构化拆解的方案给到老板，老板就会很清晰地知道你的规划和落地策略了。
 
@@ -146,7 +146,7 @@ prev: /posts/structure-thinking-methods
 
 对自己做过的事情进行简单罗列，也许你的确做了不少事情。但是不能体现你对问题思考的深度和做这个事情带来的价值。这样的述职很难打动评委，更结构化的表达应该是:“提出问题，定义问题，分析问题，解决问题，最后是展望未来”。这是一个经典的表述问题的结构，也是麦肯锡推荐的问题解决的框架。
 
-![toutiao.com](./structure-thinking/image-20200104214012963.png)
+![toutiao.com](/posts/structure-thinking/image-20200104214012963.png)
 
 类似的框架还有 zoom in/zoom out。我们说事情时，应该像电影镜头一样，先从远拉近，再由近拉远。zoom in 是先从宏观背景开始，首先让大家知道你的事情发生的背景，为什么这事重要?然后讲到具体细节，怎么做成的?解决了什么问题?背后的思考是什么?最后 Zoom out，再从细节调回到整体，结果是什么，带来的客户价值是什么，你对未来的思考是什么。
 

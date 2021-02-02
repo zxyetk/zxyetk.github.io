@@ -23,7 +23,7 @@ next: /posts/structure-thinking-methods
 - 与其快速做完每一件事，不如删减要做的事
 - 与其计较数字多寡，不如计较到底有没有答案
 
-<!-- more -->
+<!--more-->
 
 ### 价值矩阵
 

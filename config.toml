@@ -1,5 +1,118 @@
-baseURL = "https://zxye.tk/"
-languageCode = "zh-cn"
+baseURL = "https://zxye.tk"
 title = "仲夏叶 | 科技"
 
-theme = "book"
+theme = "fuji"
+hasCJKLanguage = true
+enableEmoji = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+## Change this two to switch between different language
+languageCode = "zh-cn"  # For RSS, view https://www.rssboard.org/rss-language-codes
+defaultContentLanguage = "zh-hans"  # For HTML page, now support: en, zh-hans, zh-hant, ja, nl
+
+summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
+paginate = 10
+
+# googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    isPlainText = true
+    notAlternative = true
+    mediaType = "application/json"
+    path = "/search/"
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
+[permalinks]
+  post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
+
+[params]
+  author = "仲夏叶" # You can also set author in post front matter individually
+  subTitle = "生命就是用求知的欲望燃烧自己"
+
+  # Source URL of the website, will appear in the footer
+  sourceURL = "https://github.com/zxyetk/zxyetk.github.io"
+
+  # Use CloudFlare Workers to accelerate the Google Analytics
+  # If you are using this please comment the googleAnalytics above
+  # Check https://github.com/SukkaW/cloudflare-workers-async-google-analytics for more details
+  # googleAnalyticsTid = "UA-000000000-0"
+  # googleAnalyticsRoute = "https://*.*.workers.dev/"
+
+  # Google AdSense
+  # The AdSense code will be inserted between the head tags of your site.
+  # googleAdsense = "0000000000000000"
+
+  # Word counter and read time indicator in post metadata
+  showWordCounter = true
+  showReadTime = true
+
+  # License in the footer
+  showLicenseInFooter = true
+
+  # License at the end of each post
+  showLicense = true
+  showToc = true
+
+  # Copyright
+  copyrightStartYear = "2021"
+
+  # Open Graph & Twitter Card variables
+  # You can also set description and images in post front matter individually
+  description = "生命就是用求知的欲望燃烧自己"
+  og = "/img/avatar.png" # This will use the image called og.png in static/img folder
+
+  # Posts shown in homepage
+  mainSections = ["posts"]
+
+  # Bangumi image chart id
+  # bgmImageChart = "000000"
+
+  # License
+  license = "CC BY-NC-SA 4.0"
+  licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content
+  [markup.highlight]
+    codeFences = false  # Disable Hugo's code highlighter
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Archives"
+    url = "/archives/"
+    weight = 2
+  [[menu.nav]]
+    name = "Search"
+    url = "/search/"
+    weight = 3
+  [[menu.nav]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 4
+
+  [[menu.link]]
+    name = "GitHub"
+    url = "https://github.com/stornado"
+    weight = 1
+  [[menu.link]]
+    name = "Twitter"
+    url = "https://twitter.com/ryanstornado"
+    weight = 2
